@@ -1,22 +1,26 @@
 # Api-Gateway-RED
+# VerificarUsuario
 
-#Guía:
-1. Clonar el repositorio https://github.com/LeonardoAlfonso88/Api-Gateway-RED.git
-2. Ejecutar el comando composer update
-(En caso de necesitar crear un proyecto ejecutar: composer create-project --prefer-dist laravel/laravel nombreProyecto)
+Verificar a partir del documento de identidad si el cliente existe o está bloqueado.
 
+**Request:** `/verificarCliente/`
+**Metodo:** `POST`
+**Response:**
+En caso de exito, no se enviará el tag error del json y el código será 200.
+En caso de error devolverá los siguientes códigos:
 
-## Métodos:
-### VerificarUsuario: 
+* 400 - Error en los datos
+* 401 - Cliente bloqueado
+* 409 - Cliente existente
 
-
-
-###RestApi
-
-#### Verificar Usuario
-
-Verifica si todos los campos cumplen con el formato y si el cliente no existe o no está bloqueado en la base de datos.
-
-** Metodo ** : `GET`
-** Request **: documento
-** Response **: 
+```json
+{
+  "code": 200,
+  "success": {
+    "userToken": "value"
+  },
+  "error": {
+    "msgerr": "mensaje"
+  }
+}
+```

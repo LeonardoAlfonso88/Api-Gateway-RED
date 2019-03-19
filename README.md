@@ -8,3 +8,15 @@
 
 ## Métodos:
 ### VerificarUsuario: 
+
+
+
+###RestApi
+
+#### Verificar Usuario
+
+Verifica si todos los campos cumplen con el formato y si el cliente no existe o no está bloqueado en la base de datos.
+
+** Metodo ** : `GET`
+** Request **: documento
+** Response **: 

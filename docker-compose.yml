@@ -28,7 +28,7 @@ services:
       environment:
           - MYSQL_ROOT_PASSWORD=proyectoMuff
       ports:
-          - 33601:3306
+          - 8070:3306
   phpmyadmin:
       image: phpmyadmin/phpmyadmin
       container_name: phpmyadmin
@@ -37,6 +37,6 @@ services:
           - PMA_PORT=3306
       restart: always
       ports:
-          - 8088:80
+          - 8071:80
       links:
           - db

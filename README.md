@@ -4,7 +4,9 @@
 Verificar a partir del documento de identidad si el cliente existe o está bloqueado.
 
 **Request:** `/verificarCliente/`
+
 **Metodo:** `POST`
+
 **Response:**
 En caso de exito, no se enviará el tag error del json y el código será 200.
 En caso de error devolverá los siguientes códigos:

@@ -174,7 +174,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        App\Providers\ApiResponseProvider::class,
+        App\Providers\InitialParametersProvider::class,
+        App\Providers\NetworkServicesProvider::class,
     ],
 
     /*

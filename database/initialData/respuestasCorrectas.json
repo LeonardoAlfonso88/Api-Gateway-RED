@@ -1,0 +1,18 @@
+[
+    {
+      "codigo": 200,
+      "respuestaCorrecta": 1
+    },
+    {
+      "codigo": 400,
+      "respuestaCorrecta": 0
+    },
+    {
+      "codigo": 401,
+      "respuestaCorrecta": 0
+    },
+    {
+      "codigo": 409,
+      "respuestaCorrecta": 0
+    }
+  ]

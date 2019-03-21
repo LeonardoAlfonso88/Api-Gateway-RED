@@ -52,6 +52,11 @@ return [
             'path' => storage_path('framework/cache/data'),
         ],
 
+        'user' => [
+            'driver' => 'file',
+            'path' => storage_path('framework/cache/users'),
+        ],
+
         'memcached' => [
             'driver' => 'memcached',
             'persistent_id' => env('MEMCACHED_PERSISTENT_ID'),

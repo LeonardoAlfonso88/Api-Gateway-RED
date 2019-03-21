@@ -1,0 +1,7 @@
+[
+    {
+      "parametro": "restTimeOut",
+      "descripcion": "Time out de los request hacia los uServicios",
+      "valor": 5000
+    }
+]
